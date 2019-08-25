@@ -1,0 +1,238 @@
+Skip to content
+ Gilang/ troll_project
+Sign up
+Code  Issues 2  Pull requests 1  Projects 0  Security  Pulse
+Join GitHub today
+GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together.
+
+Hack_bubble am/hack-bubble am.py
+@zlucifer zlucifer Update troll.sh
+7193803 on 13 Jun
+208 lines (207 sloc)  6.31 KB
+  
+#!/bin/bash
+#///////////////////////////////////////////////////////////////////////////////
+#///////////////////////////////////////////////////////////////////////////////
+#////                       _            _  __                              ////
+#////                      | |          (_)/ _|                             ////
+#////                   ___| |_   _  ___ _| |_ ___ _ __                     ////
+#////                  |_  / | | | |/ __| |  _/ _ \ '__|                    ////
+#////                   / /| | |_| | (__| | ||  __/ |                       ////
+#////                  /___|_|\__,_|\___|_|_| \___|_|                       ////
+#////                                                                       ////
+#///////////////////////////////////////////////////////////////////////////////
+#///////////////////////////////////////////////////////////////////////////////
+#PERINGATAN : KESALAHAN ATAU KEJAHATAN ADALAH TANGGUNG JAWAB DARI PEMAKAI
+#GUNAKAN TOOLS UNTUK KEBAIKAN JANGAN DISALAH GUNAKAN :)
+Hack(){
+    clear
+    sleep 0.03
+    echo "         _ "
+    sleep 0.03
+    echo "        /_)  _.-===-._ "
+    sleep 0.03
+    echo "       /  .; '_-.'- .'.     _ "
+    sleep 0.03
+    echo "  __ _/  /.'\ ._  '. , \   (_\ "
+    sleep 0.03
+    echo " /\_( \  |.'.-._'- .  '|     \ "
+    sleep 0.03
+    echo " |_)  /  |/'    ''--''\|     _\__ "
+    sleep 0.03
+    echo " \_)_|  /'  ._.   ._.  '\   / )(_\ "
+    sleep 0.03
+    echo " )/  (  \_      _      _/   \' (_| "
+    sleep 0.03
+    echo " /   /    \           /     _) (_/ "
+    sleep 0.03
+    echo " |   '',_ _'._'---'_.'_ _,.'    | \ "
+    sleep 0.03
+    echo " \    /  \ \  '''''  / / /     /   \ "
+    sleep 0.03
+    echo "  \_.'   \ \       / /  |   .' "
+    sleep 0.03
+    echo "   '--.,   \ \     / /  _;-'' "
+    sleep 0.03
+    echo "       '|   \ \   / /   | "
+    sleep 0.03
+    echo "       .;----'''''''----;. "
+    sleep 0.03
+    echo "      /(                 )\ "
+    sleep 0.03
+    echo "      \_''-------------''_/ "
+    sleep 0.03
+    echo "      | '';-----;-----;'' | "
+    sleep 0.03
+    echo "      | / : \ / : \ / : \ | "
+    sleep 0.03
+    echo "      |V.','.V.','.V.','.V| "
+    sleep 0.03
+    echo "      \'./_\.;./_\.;./_\.'/ "
+    sleep 0.03
+    echo "       ';..___________..;' "
+    sleep 0.03
+    echo " ============================="
+    sleep 2
+    echo " ==      hack-bubble.am =="
+    sleep 0.7
+    echo " ============================="
+}
+load(){
+    echo -e "\n"
+    bar=" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> "
+    barlength=${#bar}
+    i=0
+    while((i<100)); do
+        n=$((i*barlength / 100))
+        printf "\e[00;32m\r[%-${barlength}s]\e[00m" "${bar:0:n}"
+        ((i += RANDOM%5+2))
+        sleep 0.2
+    done
+}
+get_sms=$(curl -s http://zlucifer.com/api/hackbae.php?request=sms)
+get_call=$(curl -s http://zlucifer.com/api/hackbae.php?request=call)
+mulai (){
+    echo "Gunakan hack-bubble.am Lagi?"
+    echo "y/n?"
+    echo
+    read lagi
+    if [ $lagi = "y" ]; then
+            Hack
+    else
+            echo "Terimakasih sudah menggunakan Hack-bubble.am
+    fi
+}
+#hack
+Hack(){
+    clear
+    Hack
+    echo
+    echo "[1] hack akun target"
+    echo "[2] hack bubble.am"
+    echo "[3] Close nano hack-bubble.am"
+    echo
+    echo "1/2/3?"
+    read pilih
+    if [ $pilih = "1" ]; then
+            echo "nano hack-bubble.am"
+            #function hack
+            echo
+            echo "Silahkan masukan akun yang mau di hack target"
+            echo contoh kotakjaill
+            read target # masukin akun bubble.am target
+            echo
+            echo "Berapa akun yang mau dikirim?"
+            read paket
+            echo
+            echo Apakah akun $target "dan hack-bubble.am dikirim "$paket" sudah benar?"
+            echo y/n?
+            read confirm
+            echo
+            if [ $confirm = "y" ]; then
+                    load
+                    clear
+                    echo Melakukan hack akun yang mau di hack $target
+                    echo
+                    echo "Jangan close aplikasi sebelum spam selesai"
+                    echo "========================================"
+                    target_do=$get_hack'/hack-bubble.am?akun='$target'&paket='$paket
+                    CURL_RESPONSE=`curl -s -o /dev/null -w "%{http_code}" $target_do`
+                    echo " Gunakan tools dengan bijak"
+                    echo
+                    echo " Love u always "
+                    echo " -gilang"
+                    echo "======================================="
+            else
+                    echo "Kesalahan"
+            fi
+        mulai
+    elif [ $pilih = "2" ]; then
+            echo "hack-bubble.am"
+            #function hack
+            echo
+            echo "Silahkan masukan akun  target"
+            echo contoh kotakjaill
+            read target # masukin akun id target
+            echo
+            echo "Gunakan API hack/bubble.am?"
+            echo "[1] hack bubble.am"
+            echo "[2] phising bubble.am"
+            echo "1/2?"
+            read api
+            if [ $api = "1" ]; then
+                  api_spam="hack-bubble.am"
+            else
+                  api_hack="hack-"
+            fi
+            echo Apakah akun  $target dan hack  menggunakan $api_spam "sudah benar?"
+            echo y/n?
+            read confirm
+            echo
+            if [ $confirm = "y" ]; then
+                  load clear echo 
+                  Melakukan hack 
+                  call ke akun 
+                  $target echo 
+                  echo "Jangan 
+                  close aplikasi 
+                  sebelum spam 
+                  selesai" echo 
+                  "========================================" 
+                  cek_target=`curl 
+                  -s 
+                  $get_call/call.php?nomor=$target"&method="$api_spam` 
+                  echo -e 
+                  $cek_target echo 
+                  " Gunakan tools 
+                  den
+                  echo
+                  echo " Love u always "
+                  echo " -gilang"
+                  echo "========================================"
+            else
+                  echo Kesalahan, silahkan coba lagi
+            fi
+        mulai
+    elif [ $pilih = "3" ]; then
+        echo "Terimakasih sudah menggunakan hack-bubble.am"
+        close
+    else
+        clear
+        echo "Kesalahan"
+        mulai
+    fi
+}
+close(){
+    exit
+}
+clear
+echo "Loading.."
+load
+clear
+troll
+echo Selamat datang kak, Siapa nick kaka? #tulisan keluar
+read nick #membaca yang ditulis
+clear
+troll
+echo Selamat datang $nick ":)"
+echo
+echo "Mulai troll project?"
+echo "y/n?"
+read mulai
+if [ $mulai = "y" ]; then
+      spam
+else
+      close
+fi
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
